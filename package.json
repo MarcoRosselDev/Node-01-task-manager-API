@@ -1,0 +1,26 @@
+{
+  "name": "node-01-task-manager-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoRosselDev/Node-01-task-manager-API.git"
+  },
+  "keywords": [
+    "node-project"
+  ],
+  "author": "admin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcoRosselDev/Node-01-task-manager-API/issues"
+  },
+  "homepage": "https://github.com/MarcoRosselDev/Node-01-task-manager-API#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
