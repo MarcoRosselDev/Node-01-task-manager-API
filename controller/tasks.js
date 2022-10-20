@@ -1,8 +1,7 @@
-const express = require("express");
-const router = express.Router();
+const getAllTasks = (req, res) => {
+  res.send("all itemsss");
+};
 
-router.route("/").get((req, res) => {
-  res.send("all items");
-});
-
-module.exports = router;
+module.exports = {
+  getAllTasks,
+};
