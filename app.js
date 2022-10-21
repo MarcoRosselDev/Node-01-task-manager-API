@@ -14,6 +14,7 @@ app.use("/api/v1/tasks", tasks);
 // app.patch("/api/v1/tasks/:id");    - update task
 // app.delete("/api/v1/tasks/:id");   - delete task
 // some changes in .gitignore
+// git rm -r --cached <folder or archive to delete to caches>
 
 const port = 3000;
 
