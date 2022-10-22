@@ -8,6 +8,8 @@ const getAllTasks = async (req, res) => {
   }
 };
 
+// podemos atrapar los errores y denegar el input o obtencion si no cumple los requisitos minimos
+
 const createTask = async (req, res) => {
   try {
     const task = await Task.create(req.body);
