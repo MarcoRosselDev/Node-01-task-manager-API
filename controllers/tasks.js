@@ -29,7 +29,9 @@ const getTask = async (req, res, next) => {
     }
 
     res.status(200).json({ task });
-  } catch (error) {}
+  } catch (error) {
+    res.status(500).json({ msg: error });
+  }
 };
 const deleteTask = async (req, res, next) => {
   res.status(200).json(req.body);
