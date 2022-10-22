@@ -20,7 +20,11 @@ const createTask = async (req, res) => {
 };
 
 const getTask = async (req, res, next) => {
-  res.status(200).json(req.body);
+  try {
+    const { id: taskID } = req.params;
+    const task = await Task.findOne({ _id: taskID });
+    res.status(200).json({ task });
+  } catch (error) {}
 };
 const deleteTask = async (req, res, next) => {
   res.status(200).json(req.body);
